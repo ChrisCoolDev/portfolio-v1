@@ -1,6 +1,6 @@
 import localFont from 'next/font/local';
 
-const nohemi = localFont({ src: '../../public/font/Nohemi/Nohemi-Bold.ttf', display: 'swap'});
+const nohemi = localFont({ src: '../../app/font/Nohemi/Nohemi-Bold.ttf', display: 'swap'});
 
 const handleClick = () => {
     window.open('mailto:talchrist10@gmail.com', '_blank')

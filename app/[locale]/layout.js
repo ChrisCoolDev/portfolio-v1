@@ -12,17 +12,17 @@ const ibmPlexSans = IBM_Plex_Sans({
  const Jeko = localFont({
   src: [
     {
-      path: '../../public/font/Jeko/jekoDEMO-ExtraBold.otf',
+      path: '../font/Jeko/jekoDEMO-ExtraBold.otf',
       weight: '900',
       style: 'normal',
     },
     {
-      path: '../../public/font/Jeko/jekoDEMO-ExtraLight.otf',
+      path: '../font/Jeko/jekoDEMO-ExtraLight.otf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../../public/font/Jeko/jekoDEMO-Medium.otf',
+      path: '../font/Jeko/jekoDEMO-Medium.otf',
       weight: '500',
       style: 'normal',
     },
@@ -32,27 +32,27 @@ const ibmPlexSans = IBM_Plex_Sans({
  const Satoshi = localFont({
   src: [
     {
-      path: '../../public/font/Satoshi/Satoshi-Black.otf',
+      path: '../font/Satoshi/Satoshi-Black.otf',
       weight: '900',
       style: 'normal'
     },
     {
-      path: '../../public/font/Satoshi/Satoshi-Bold.otf',
+      path: '../font/Satoshi/Satoshi-Bold.otf',
       weight: '700',
       style: 'normal'
     },
     {
-      path: '../../public/font/Satoshi/Satoshi-Medium.otf',
+      path: '../font/Satoshi/Satoshi-Medium.otf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: '../../public/font/Satoshi/Satoshi-Regular.otf',
+      path: '../font/Satoshi/Satoshi-Regular.otf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../../public/font/Satoshi/Satoshi-Light.otf',
+      path: '../font/Satoshi/Satoshi-Light.otf',
       weight: '300',
       style: 'normal'
     },

@@ -28,7 +28,7 @@ export default function ProjectSection(){
             type: 'Side-project',
             tags: 'Laravel, React, Tailwindcss',
             name: 'Subscribe',
-            description: "Conception et participation à l'intégration de l'application web Subscribe, qui permet aux utilisateurs de gérer facilement leurs abonnements (Netflix, Spotify, Deezer, etc.).",
+            description: "Design and participation in the integration of the web application Subscribe, which allows users to easily manage their subscriptions (Netflix, Spotify, Deezer, etc.).",
             url: 'https://subscribe-ui.vercel.app'
             
         },
@@ -45,7 +45,7 @@ export default function ProjectSection(){
             type: 'fun-project',
             tags: 'Livewire, Alpine js, Laravel, Tailwindcss',
             name: 'Growk',
-            description: "Développement de l'application web Growk, qui sert todo-list et permet aux utilisateurs de mieux organiser leur quotidien.",
+            description: "Development of the web application Growk, which serves as a to-do list and helps users better organize their daily lives.",
             url: 'https://github.com/ChristianLudovic/todo-list-in-laravel-and-livewire'
         },
         {
@@ -53,7 +53,7 @@ export default function ProjectSection(){
             type: 'Fun-project',
             tags: 'Laravel, Livewire, Alpine.js, Tailwindcss',
             name: 'Scheddo',
-            description: "Développement de l'application web Sheddo, qui permet aux utilisateurs de réserver des services (coiffure, barbier, manucure, pédicure, etc.) dans des boutiques spécialisées.",
+            description: "Development of the web application Sheddo, which allows users to book services (hairdressing, barbering, manicures, pedicures, etc.) in specialized shops.",
             url: 'https://github.com/ChristianLudovic/scheddo'
             
         },
@@ -62,7 +62,7 @@ export default function ProjectSection(){
             type: 'Portfolio',
             tags: 'Nextjs, Tailwindcss',
             name: 'My portfolio',
-            description: "Conception et integration de mon portfolio personnel, qui présente mes compétences, mes projets et mes expériences professionnelles.",
+            description: "Design and integration of my personal portfolio, showcasing my skills, projects, and professional experiences.",
             url: 'https://chrisfaciledev.netlify.app'
         },
         
@@ -71,9 +71,9 @@ export default function ProjectSection(){
 
     return(
         <>
-            <div className='px-4 pb-[80px]'>
+            <div className='px-4 '>
                 <div className='max-w-[1080px] mx-auto flex flex-col space-y-11 max-xl:max-w-[900px] max-lg:max-w-[700px]'>
-                    <h1 className={`text-2xl font-bold tracking-[1px] font-meduim ${nohemi.className}`}>Mes projets</h1>
+                    <h1 className={`text-2xl font-bold tracking-[1px]`}>My projects</h1>
                     <div className='flex flex-col gap-8 max-lg:w-full'>
                         <div className='flex gap-[30px] flex-wrap max-xl:gap-4 max-lg:flex-col max-lg-w-full max-lg:space-y-11' >
                             {projects.map((project, index) => (

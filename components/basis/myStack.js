@@ -6,6 +6,7 @@ import tailwind from '@/public/logos/tailwindcss.svg';
 import laravel from '@/public/logos/laravel.svg';
 import livewire from '@/public/logos/livewire.svg';
 import shopify from '@/public/logos/shopify.svg';
+import vue from '@/public/logos/vue.png'
 
 
 export default function MyStack() {
@@ -26,11 +27,12 @@ export default function MyStack() {
                             </defs>
                         </svg>
                     </div>
-                    <h2 className='font-bold'>Mes compétences techniques.</h2>
+                    <h2 className='font-bold'>My technical skills.</h2>
                 </div>
-                <p className='w-[480px] text-sm max-xl:w-[390px] max-lg:w-full'>Avec le temps {'j\'ai'} acquis des compétences dans différents domaines de la programmation. Voici quelques technologies que {'j\'utilise'} régulièrement.
+                <p className='w-[480px] text-sm max-xl:w-[390px] max-lg:w-full text-zinc-600'>Over time, I have acquired skills in various areas of programming. Here are some technologies that I regularly use.
                 </p>
                 <div className='flex items-center gap-7 flex-wrap '>
+                    <Image src={vue} height={26} width={26} alt="vue js logo"/>
                     <Image src={nextjs} alt="next js logo"/>
                     <Image src={reactjs} alt="react js logo"/>
                     <Image src={tailwind} alt="tailwindcss logo"/>

@@ -9,6 +9,26 @@ const ibmPlexSans = IBM_Plex_Sans({
   display: "swap",
  });
 
+ const Jeko = localFont({
+  src: [
+    {
+      path: '../../public/font/Jeko/jekoDEMO-ExtraBold.otf',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: '../../public/font/Jeko/jekoDEMO-ExtraLight.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../public/font/Jeko/jekoDEMO-Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+  ]
+ })
+
  const Satoshi = localFont({
   src: [
     {
@@ -50,7 +70,7 @@ export default function RootLayout({params, children }) {
   const { locale } = params;
   return (
     <html lang={locale}>
-      <body className={Satoshi.className}>
+      <body className={`${Jeko.className}`}>
         <I18nProviderClient locale={locale}>
           {children}
         </I18nProviderClient>

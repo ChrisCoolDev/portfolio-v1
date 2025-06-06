@@ -18,10 +18,8 @@ export default async function Home() {
         <div className="body-wrapper-content">
           <NavBar />
           <HeroSection t={t} />
-          <HorizontalDivider />
           <EductionSection t={t}/>
           <ProjectSection t={t}/>
-          <HorizontalDivider />
           <StackExperiencePlaylistSection t={t} />
         </div>
       </div>

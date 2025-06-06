@@ -22,8 +22,8 @@ export default function ProjectCard({data}){
             </div>
             <p className="mb-[10px] text-sm text-gray-500">{data.tags}</p>
             <div className="space-y-3">
-                <h2 className='font-semibold'>{data.name}</h2>
-                <p className='text-[14px]'>{data.description}</p>
+                <h2 className='font-semibold text-zinc-800'>{data.name}</h2>
+                <p className='text-sm text-zinc-600 leading-[170%]'>{data.description}</p>
             </div>
         </div>
     )

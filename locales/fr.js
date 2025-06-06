@@ -1,9 +1,9 @@
 import { HeadingIcon } from "@radix-ui/react-icons";
 
 export default {
-    mainHeading: 'Developpeur de logiciels',
-    subHeading: 'Hello, je suis Christian Ludovic, etudiant en software engineering à l\'universite technologique de Gümüşhane. Je suis disponible pour des opportunités de stage ou de job à temps partiel en full-remote.',
-    Heading1: 'Mon parcours scolaire',
+    mainHeading: 'Software engineer and web developer',
+    subHeading: 'Hello, I\'m Christian Ludovic, a software engineering student at Gümüşhane University of Technology. I am available for full-remote internship or part-time job opportunities.',
+    Heading1: 'Education',
     read: 'read article',
     subscribeMessage: "Subscribe to be notified and never miss one!",
     articleNotAvailable: "This article is not available in your language.",

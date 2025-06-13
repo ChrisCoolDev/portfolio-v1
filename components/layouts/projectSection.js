@@ -4,8 +4,6 @@ import Badge from '../basis/badge'
 import localFont from 'next/font/local';
 import ProjectCard from '../basis/projectCard'
 
-const nohemi = localFont({ src: '../../font/Nohemi/Nohemi-Bold.ttf', display: 'swap'});
-
 
 export default function ProjectSection(){
 

@@ -13,7 +13,7 @@ export default async function Home() {
   const t = await useI18n()
   return (
     <>
-    <div className="relative bg-black"> 
+    <div className="relative bg-black" > 
       <div className="body-wrapper max-sm:rounded-b-[80px]">
         <div className="body-wrapper-content">
           <NavBar />

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .body-wrapper {
   position: relative;
   border-bottom-left-radius: 150px;

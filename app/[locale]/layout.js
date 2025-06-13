@@ -1,3 +1,5 @@
+
+
 import localFont from 'next/font/local';
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
@@ -12,17 +14,17 @@ const ibmPlexSans = IBM_Plex_Sans({
  const Jeko = localFont({
   src: [
     {
-      path: '../../font/Jeko/jekoDEMO-ExtraBold.otf',
+      path: '../../public/font/Jeko/jekoDEMO-ExtraBold.otf',
       weight: '900',
       style: 'normal',
     },
     {
-      path: '../../font/Jeko/jekoDEMO-ExtraLight.otf',
+      path: '../../public/font/Jeko/jekoDEMO-ExtraLight.otf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../../font/Jeko/jekoDEMO-Medium.otf',
+      path: '../../public/font/Jeko/jekoDEMO-Medium.otf',
       weight: '500',
       style: 'normal',
     },

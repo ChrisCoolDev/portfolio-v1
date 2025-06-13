@@ -1,9 +1,6 @@
-
-
 import localFont from 'next/font/local';
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
-import { I18nProviderClient } from '../../locales/client'
 
 const ibmPlexSans = IBM_Plex_Sans({ 
   subsets: ["latin"],
@@ -14,17 +11,17 @@ const ibmPlexSans = IBM_Plex_Sans({
  const Jeko = localFont({
   src: [
     {
-      path: '/font/Jeko/jekoDEMO-ExtraBold.otf',
+      path: 'font/Jeko/jekoDEMO-ExtraBold.otf',
       weight: '900',
       style: 'normal',
     },
     {
-      path: '/font/Jeko/jekoDEMO-ExtraLight.otf',
+      path: 'font/Jeko/jekoDEMO-ExtraLight.otf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '/font/Jeko/jekoDEMO-Medium.otf',
+      path: 'font/Jeko/jekoDEMO-Medium.otf',
       weight: '500',
       style: 'normal',
     },
@@ -36,14 +33,11 @@ export const metadata = {
   description: "Mon portfolio personnel pour vous présenter mes compétences en développement web.",
 };
 
-export default function RootLayout({params, children }) {
-  const { locale } = params;
+export default function RootLayout({children }) {
   return (
-    <html lang={locale}>
+    <html lang='en '>
       <body className={`${Jeko.className}`}>
-        <I18nProviderClient locale={locale}>
           {children}
-        </I18nProviderClient>
       </body>
     </html>
   );

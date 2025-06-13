@@ -20,7 +20,7 @@ export default function EductionSection({t}){
                             <h2 
                                 className={`text-2xl font-bold tracking-[1px]`}
                             
-                            >{t('Heading1')}</h2>
+                            >My education</h2>
                         </div>
                         <div className='grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3'>
                             <div className='group relative flex flex-col items-start isolate gap-5'>

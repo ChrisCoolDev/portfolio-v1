@@ -24,7 +24,7 @@ export default function EductionSection({t}){
                         </div>
                         <div className='grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3'>
                             <div className='group relative flex flex-col items-start isolate gap-5'>
-                                <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white '>
+                                <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white shadow-lg shadow-zinc-800/5 backdrop-blur'>
                                     <Image src={gumuUniLogo} width={28} height={28} alt="logo de glom" />
                                 </div>
                                 <div className='space-y-[6px]'>
@@ -40,7 +40,7 @@ export default function EductionSection({t}){
                                 </div>
                             </div>
                             <div className='group relative flex flex-col items-start isolate gap-5'>
-                                <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white '>
+                                <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white shadow-lg shadow-zinc-800/5 backdrop-blur'>
                                     <Image src={slz} width={28} height={28} alt="logo du slz douala" />
                                 </div>
                                 <div className='space-y-[6px]'>
@@ -56,7 +56,7 @@ export default function EductionSection({t}){
                                 </div>
                             </div>
                             <div className='group relative flex flex-col items-start isolate gap-5'>
-                                <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white'>
+                                <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white shadow-lg shadow-zinc-800/5 backdrop-blur'>
                                     <Image src={iut} width={28} height={28} alt="logo de glom" />
                                 </div>
                                 <div className='space-y-[6px]'>

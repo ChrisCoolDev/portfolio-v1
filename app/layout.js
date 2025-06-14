@@ -19,7 +19,9 @@ import "./globals.css";
       weight: '500',
       style: 'normal',
     },
-  ]
+  ],
+  variable: '--font-jeko',
+  display: 'swap',
  })
 
 export const metadata = {

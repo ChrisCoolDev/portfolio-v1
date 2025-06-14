@@ -2,7 +2,7 @@ import localFont from 'next/font/local';
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
- const Jeko = localFont({
+ /*const Jeko = localFont({
   src: [
     {
       path: '../public/fonts/Jeko/jekoDEMOExtraBold.otf',
@@ -22,7 +22,7 @@ import "./globals.css";
   ],
   variable: '--font-jeko',
   display: 'swap',
- })
+ })*/
 
 export const metadata = {
   title: "Chris",
@@ -32,7 +32,7 @@ export const metadata = {
 export default function RootLayout({children }) {
   return (
     <html lang='en '>
-      <body className={`${Jeko.className}`}>
+      <body >
           {children}
       </body>
     </html>

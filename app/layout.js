@@ -5,17 +5,17 @@ import "./globals.css";
  const Jeko = localFont({
   src: [
     {
-      path: '../public/fonts/Jeko/jekoDEMO-ExtraBold.otf',
+      path: '../public/fonts/Jeko/jekoDEMOExtraBold.otf',
       weight: '900',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Jeko/jekoDEMO-ExtraLight.otf',
+      path: '../public/fonts/Jeko/jekoDEMOExtraLight.otf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Jeko/jekoDEMO-Medium.otf',
+      path: '../public/fonts/Jeko/jekoDEMOMedium.otf',
       weight: '500',
       style: 'normal',
     },

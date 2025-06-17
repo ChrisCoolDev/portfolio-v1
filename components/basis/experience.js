@@ -2,12 +2,15 @@ import Image from 'next/image'
 import ejaraLogo from '@/public/logos/ejara.svg'
 import GlomLogo from '@/public/logos/glom.png'
 import ybdigital from '@/public/logos/yb_digitall.jpeg'
+import experiences from '@/data/projects.json'
 
 export default function Experience (){
 
     const mailTo = () => {
         window.open('mailto:talchrist10@gmail.com')
     }
+
+    const exp = experiences
 
     return(
         <>
@@ -22,42 +25,25 @@ export default function Experience (){
                     <h2 className={`font-bold`}>My Experience</h2>
                 </div>
                 <div className="flex flex-col gap-4"> 
-                    <div className="flex items-center gap-4 max-xl:w-[390px]'">
-                        <div className='w-12 h-12 max-sm:w-14 border border-solid border-stone-300 rounded-full flex items-center justify-center bg-white'> 
-                            <Image src={ybdigital} width={40} height={40} alt="logo de glom" />
-                        </div>
-                        <div className="flex flex-col gap-1 w-[424px] max-xl:w-[300px] max-lg:w-full">
-                            <h3 className='font-medium text-[14px]'>Yb_digitall</h3>
-                            <div className="flex items-center justify-between w-full text-xs max-sm:flex-col max-sm:items-start max-sm:gap-1">
-                                <p className='text-zinc-600 text-xs'>Front developer</p>
-                                <p className='text-xs text-gray-400'>Dec 2024 - Feb 2025</p>
-                            </div>
-                        </div>
-                    </div>                   
-                    <div className="flex items-center gap-4">
-                        <div className='w-12 h-12 max-sm:w-14 border border-solid border-stone-300 rounded-full flex items-center justify-center bg-white'>
-                            <Image src={ejaraLogo} width={40} height={40} alt="logo de ejara " />
-                        </div>
-                        <div className="flex flex-col gap-1 w-[424px] max-xl:w-[300px] max-lg:w-full">
-                            <h3 className='font-medium text-[14px]'>Ejara Cameroun</h3>
-                            <div className="flex items-center justify-between w-full text-xs max-sm:flex-col max-sm:items-start max-sm:gap-1">
-                                <p className='text-zinc-600 text-xs'>Product Designer Junior</p>
-                                <p className='text-gray-400 text-xs'>Oct 2022 - Mar 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-4 max-xl:w-[390px]'">
-                        <div className='w-12 h-12 max-sm:w-14 border border-solid border-stone-300 rounded-full flex items-center justify-center bg-white'> 
-                            <Image src={GlomLogo} width={40} height={40} alt="logo de glom" />
-                        </div>
-                        <div className="flex flex-col gap-1 w-[424px] max-xl:w-[300px] max-lg:w-full">
-                            <h3 className='font-medium text-[14px]'>Glom Sarl Cameroun</h3>
-                            <div className="flex items-center justify-between w-full text-xs max-sm:flex-col max-sm:items-start max-sm:gap-1">
-                                <p className='text-zinc-600 text-xs'>Web Designer</p>
-                                <p className='text-xs text-gray-400'>Jan 2022 - Jul 2023</p>
-                            </div>
-                        </div>
-                    </div>
+                   {
+                    exp.map((experience, index) => {
+                        return(
+                            <div className="flex items-center gap-4 max-xl:w-[390px]" key={index}>
+                                <div className='w-12 h-12 max-sm:w-14 border border-solid border-stone-300 rounded-full flex items-center justify-center bg-white'> 
+                                    <Image src={experience.image} width={40} height={40} alt="logo de glom" />
+                                </div>
+                                <div className="flex flex-col gap-1 w-[424px] max-xl:w-[300px] max-lg:w-full">
+                                    <h3 className='font-medium text-[14px]'>{experience.name}</h3>
+                                    <div className="flex items-center justify-between w-full text-xs max-sm:flex-col max-sm:items-start max-sm:gap-1">
+                                        <p className='text-zinc-600 text-xs'>{experience.role}</p>
+                                        <p className='text-xs text-gray-400'>{experience.startingDate} - {experience.endingDate}</p>
+                                    </div>
+                                </div>
+                            </div>  
+                        )
+                    })
+                   }
+                    
                 </div>
             </div>
         </>

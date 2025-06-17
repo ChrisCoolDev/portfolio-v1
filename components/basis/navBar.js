@@ -31,7 +31,7 @@ export default function NavBar (){
                         <div className="bg-white px-6 py-2 flex items-center space-x-6 shadow-lg shadow-zinc-800/5 backdrop-blur border border-solid border-stone-200 rounded-full font-medium">
                             <button className="text-zinc-800 text-sm ">About me</button>
                             <button onClick={blogRedirect} className="text-zinc-800 text-sm ">Blog</button>
-                            <button className="text-zinc-800 text-sm ">Projects</button>
+                            <a className="text-zinc-800 text-sm " href="/my_cv/cv.pdf">Resume</a>
                         </div>
                         <div className="flex items-flex gap-6">
                             <div className="flex items-center justify-center max-sm:hidden" onClick={linkdinRedirect}>

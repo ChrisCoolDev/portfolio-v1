@@ -4,6 +4,10 @@ import GlomLogo from '@/public/logos/glom.png'
 import ybdigital from '@/public/logos/yb_digitall.jpeg'
 import experiences from '@/data/projects.json'
 
+import localFont from 'next/font/local';
+
+const euclid = localFont({ src: '../../public/fonts/euclid/EuclidTriangle-Bold.ttf', variable: '--font-euclid', display: 'swap'});
+
 export default function Experience (){
 
     const mailTo = () => {
@@ -22,7 +26,7 @@ export default function Experience (){
                             <path d="M3 14.25H9.249C9.733 14.25 10.201 14.248 10.565 14.569L11.342 15.251C11.5238 15.411 11.7578 15.4993 12 15.4993C12.2422 15.4993 12.4762 15.411 12.658 15.251L13.435 14.569C13.799 14.249 14.267 14.25 14.751 14.25H21M8.75 6.5V4.75C8.75 4.21957 8.96071 3.71086 9.33579 3.33579C9.71086 2.96071 10.2196 2.75 10.75 2.75H13.25C13.7804 2.75 14.2891 2.96071 14.6642 3.33579C15.0393 3.71086 15.25 4.21957 15.25 4.75V6.5" stroke="#71717A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h2 className={`font-bold`}>My Experience</h2>
+                    <h2 className={`text-[17px] font-bold tracking-[0.2px] ${euclid.className}`}>My Experience</h2>
                 </div>
                 <div className="flex flex-col gap-4"> 
                    {

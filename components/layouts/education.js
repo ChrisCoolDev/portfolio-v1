@@ -5,6 +5,10 @@ import gumuUniLogo from '@/public/logos/gum_uni_logo.svg'
 import iut from '@/public/logos/iut.png'
 import slz from '@/public/logos/slz.png'
 
+import localFont from 'next/font/local';
+
+const euclid = localFont({ src: '../../public/fonts/euclid/EuclidTriangle-Bold.ttf', variable: '--font-euclid', display: 'swap'});
+
 export default function EductionSection({t}){
 
     const redirectBadjoun = () => {
@@ -18,7 +22,7 @@ export default function EductionSection({t}){
                     <div className='flex flex-col space-y-11 max-sm:space-y-9 items-start'>
                         <div className="flex items-center justify-center">
                             <h2 
-                                className={`text-2xl font-bold tracking-[1px]`}
+                                className={`text-[22px] font-bold tracking-[0.2px] ${euclid.className}`}
                             
                             >My education</h2>
                         </div>

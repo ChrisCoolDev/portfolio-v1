@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import Badge from '../basis/badge'
 
-import localFont from 'next/font/local';
 import ProjectCard from '../basis/projectCard'
+
+import localFont from 'next/font/local';
+
+const euclid = localFont({ src: '../../public/fonts/euclid/EuclidTriangle-Bold.ttf', variable: '--font-euclid', display: 'swap'});
 
 
 export default function ProjectSection(){
@@ -71,7 +74,7 @@ export default function ProjectSection(){
         <>
             <div className='px-4 '>
                 <div className='max-w-[1080px] mx-auto flex flex-col space-y-11 max-xl:max-w-[900px] max-lg:max-w-[700px]'>
-                    <h1 className={`text-2xl font-bold tracking-[1px]`}>My projects</h1>
+                    <h1 className={`text-[22px] font-bold tracking-[0.2px] ${euclid.className}`}>My projects</h1>
                     <div className='flex flex-col gap-8 max-lg:w-full'>
                         <div className='flex gap-[30px] flex-wrap max-xl:gap-4 max-lg:flex-col max-lg-w-full max-lg:space-y-11' >
                             {projects.map((project, index) => (

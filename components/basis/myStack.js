@@ -8,6 +8,9 @@ import livewire from '@/public/logos/livewire.svg';
 import shopify from '@/public/logos/shopify.svg';
 import vue from '@/public/logos/vue.png'
 
+import localFont from 'next/font/local';
+
+const euclid = localFont({ src: '../../public/fonts/euclid/EuclidTriangle-Bold.ttf', variable: '--font-euclid', display: 'swap'});
 
 export default function MyStack() {
     return (
@@ -27,7 +30,7 @@ export default function MyStack() {
                             </defs>
                         </svg>
                     </div>
-                    <h2 className='font-bold'>My technical skills.</h2>
+                    <h2 className={`text-[17px] font-bold tracking-[0.2px] ${euclid.className}`}>My technical skills</h2>
                 </div>
                 <p className='w-[480px] text-sm max-xl:w-[390px] max-lg:w-full text-zinc-600'>Over time, I have acquired skills in various areas of programming. Here are some technologies that I regularly use.
                 </p>

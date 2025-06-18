@@ -1,12 +1,13 @@
 import localFont from 'next/font/local';
 
-const nohemi = localFont({ src: '../../public/fonts/nohemi/Nohemi-Bold.otf', variable: '--font-nohemi', display: 'swap'});
+    const nohemi = localFont({ src: '../../public/fonts/nohemi/Nohemi-Bold.otf', variable: '--font-nohemi', display: 'swap'});
 
-const handleClick = () => {
-    window.open('mailto:talchrist10@gmail.com', '_blank')
-}
+    const handleClick = () => {
+        window.open('mailto:talchrist10@gmail.com', '_blank')
+    }
 
 export default function Footer() {
+
     return (
         <>
             <div className=" px-4 text-white">

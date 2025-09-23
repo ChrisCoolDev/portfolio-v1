@@ -34,6 +34,22 @@ export default function ProjectSection(){
             
         },
         {
+            imagePath: "/projects_images/hakuThumbnail.png",
+            type: 'Agency project',
+            tags: 'React, Tailwindcss',
+            name: 'Haku Studio',
+            description: 'Design and integration of the landing page of an creactive agency studio called Haku.Studio',
+            url: 'https://haku-landing-page-blue.vercel.app'
+        },
+        {
+            imagePath: "/projects_images/yeezyThumbnail.png",
+            type: 'Side-project',
+            tags: 'Vue, Tailwind, jspdf, htmltocanvas',
+            name: 'Yeezy webapp clone',
+            description : "Built the clone of the entire process of yeezy e-commerce webapp, i've also add some future like receipt generation in pdf",
+            url: 'https://yeezy-clone-psi.vercel.app'    
+        },
+        {
             imagePath: "/projects_images/calendarThumbnail.png",
             type: 'Side-project',
             tags: 'Laravel, Livewire, Alpine.js, Tailwindcss',

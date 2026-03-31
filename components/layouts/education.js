@@ -1,4 +1,7 @@
+"use client"
+
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import educationIcon from '@/public/education.svg'
 import Link from 'next/link'
 import gumuUniLogo from '@/public/logos/gum_uni_logo.svg'
@@ -21,13 +24,22 @@ export default function EductionSection({t}){
                 <div className="flex flex-col items-start max-w-[1080px] mx-auto gap-6 max-xl:max-w-[900px] max-lg:max-w-[700px]">
                     <div className='flex flex-col space-y-11 max-sm:space-y-9 items-start'>
                         <div className="flex items-center justify-center">
-                            <h2 
+                            <motion.h2 
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5 }}
                                 className={`text-[22px] font-bold tracking-[0.2px] ${euclid.className}`}
-                            
-                            >My education</h2>
+                            >My education</motion.h2>
                         </div>
                         <div className='grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3'>
-                            <div className='group relative flex flex-col items-start isolate gap-5'>
+                            <motion.div 
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: 0.1 }}
+                                className='group relative flex flex-col items-start isolate gap-5'
+                            >
                                 <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white shadow-lg shadow-zinc-800/5 backdrop-blur'>
                                     <Image src={gumuUniLogo} width={28} height={28} alt="logo de glom" />
                                 </div>
@@ -42,8 +54,14 @@ export default function EductionSection({t}){
                                     <Link href={'https://www.gumushane.edu.tr/'} className='text-xs text-zinc-600 tracking-[0.7px]'>gumushane.edu.tr</Link>
 
                                 </div>
-                            </div>
-                            <div className='group relative flex flex-col items-start isolate gap-5'>
+                            </motion.div>
+                            <motion.div 
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: 0.2 }}
+                                className='group relative flex flex-col items-start isolate gap-5'
+                            >
                                 <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white shadow-lg shadow-zinc-800/5 backdrop-blur'>
                                     <Image src={slz} width={28} height={28} alt="logo du slz douala" />
                                 </div>
@@ -58,8 +76,14 @@ export default function EductionSection({t}){
                                     <Link href={'https://www.slz-douala.org/fr/'} className='text-xs text-zinc-600 tracking-[0.7px]'>slz-douala.org/fr/</Link>
 
                                 </div>
-                            </div>
-                            <div className='group relative flex flex-col items-start isolate gap-5'>
+                            </motion.div>
+                            <motion.div 
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: 0.3 }}
+                                className='group relative flex flex-col items-start isolate gap-5'
+                            >
                                 <div className='w-12 h-12 max-sm:w-14 rounded-[6px] border border-solid border-stone-300 flex items-center justify-center bg-white shadow-lg shadow-zinc-800/5 backdrop-blur'>
                                     <Image src={iut} width={28} height={28} alt="logo de glom" />
                                 </div>
@@ -74,7 +98,7 @@ export default function EductionSection({t}){
                                     <Link href={'https://www.univ-dschang.org/iutfv-bandjoun/'} className='text-xs text-zinc-600 tracking-[0.7px]'>univ-dschang.org/iutfv-bandjoun/</Link>
 
                                 </div>
-                            </div>
+                            </motion.div>
                             
                         </div>
                     </div>

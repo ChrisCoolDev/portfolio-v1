@@ -1,4 +1,7 @@
+"use client"
+
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import Badge from '../basis/badge'
 
 import ProjectCard from '../basis/projectCard'
@@ -82,6 +85,14 @@ export default function ProjectSection(){
             description: "Design and integration of my personal portfolio, showcasing my skills, projects, and professional experiences.",
             url: 'https://chrisfaciledev.netlify.app'
         },
+        {
+            imagePath: "/projects_images/portfolioThumbnail.png",
+            type: 'Portfolio',
+            tags: 'Nextjs, Tailwindcss',
+            name: 'My portfolio',
+            description: "Design and integration of my personal portfolio, showcasing my skills, projects, and professional experiences.",
+            url: 'https://chrisfaciledev.netlify.app'
+        },
         
         
     ]
@@ -90,11 +101,25 @@ export default function ProjectSection(){
         <>
             <div className='px-4 '>
                 <div className='max-w-[1080px] mx-auto flex flex-col space-y-11 max-xl:max-w-[900px] max-lg:max-w-[700px]'>
-                    <h1 className={`text-[22px] font-bold tracking-[0.2px] ${euclid.className}`}>My projects</h1>
+                    <motion.h1 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className={`text-[22px] font-bold tracking-[0.2px] ${euclid.className}`}
+                    >My projects</motion.h1>
                     <div className='flex flex-col gap-8 max-lg:w-full'>
                         <div className='flex gap-[30px] flex-wrap max-xl:gap-4 max-lg:flex-col max-lg-w-full max-lg:space-y-11' >
                             {projects.map((project, index) => (
-                                <ProjectCard key={index} data={project}/>
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                                >
+                                    <ProjectCard data={project}/>
+                                </motion.div>
                             ))}
                         </div>
                     </div>

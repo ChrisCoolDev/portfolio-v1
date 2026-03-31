@@ -85,15 +85,6 @@ export default function ProjectSection(){
             description: "Design and integration of my personal portfolio, showcasing my skills, projects, and professional experiences.",
             url: 'https://chrisfaciledev.netlify.app'
         },
-        {
-            imagePath: "/projects_images/portfolioThumbnail.png",
-            type: 'Portfolio',
-            tags: 'Nextjs, Tailwindcss',
-            name: 'My portfolio',
-            description: "Design and integration of my personal portfolio, showcasing my skills, projects, and professional experiences.",
-            url: 'https://chrisfaciledev.netlify.app'
-        },
-        
         
     ]
 
